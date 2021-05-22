@@ -1,0 +1,328 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  max-width: 2400px;
+  margin: 0 auto;
+}
+
+.bg-mobile {
+  background-image: url(bg-header-mobile.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: block;
+  text-align: center;
+  padding: 5em;
+}
+
+.lines {
+  font-family: "Bai Jamjuree", sans-serif;
+  text-align: center;
+  width: 90%;
+  margin: 0em auto;
+}
+.lines h1 {
+  font-weight: 600;
+  color: rgb(70, 68, 68);
+  font-size: 1.8em;
+}
+.lines p {
+  font-weight: 300;
+  color: darkgrey;
+  padding: 1em 1em;
+  font-size: 0.9em;
+}
+.buttonswrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+.ios button,
+.mac button {
+  border: none;
+  border-radius: 3em;
+  width: 100%;
+  height: 3em;
+  color: white;
+  margin: 1em auto;
+  font-size: 1em;
+  cursor: pointer;
+}
+.ios button {
+  background-color: rgb(68, 190, 154);
+  box-shadow: 0px 2px 5px 3px rgb(48, 136, 110);
+}
+.mac button {
+  background-color: rgb(88, 126, 233);
+  box-shadow: 0px 2px 5px 3px rgb(72, 103, 189);
+}
+
+.kts {
+  font-family: "Bai Jamjuree", sans-serif;
+  text-align: center;
+  padding: 5em 1em 2em 1em;
+}
+
+.kts h1 {
+  font-weight: 600;
+  color: rgb(70, 68, 68);
+  font-size: 1.5em;
+  margin: 0em auto;
+  width: 90%;
+}
+.kts p {
+  font-weight: 300;
+  color: darkgrey;
+  margin: 1em auto;
+  width: 90%;
+  font-size: 0.9em;
+}
+
+.computer img {
+  width: 80%;
+  margin: auto 2em;
+}
+
+.pointwrapper {
+  font-family: "Bai Jamjuree", sans-serif;
+  text-align: center;
+  margin: 3em auto;
+  width: 90%;
+}
+.quick h1 {
+  font-weight: 600;
+  color: rgb(70, 68, 68);
+  font-size: 1.3em;
+}
+.quick p {
+  font-weight: 300;
+  color: darkgrey;
+  padding: 1em 1em;
+  font-size: 0.9em;
+}
+
+.access {
+  font-family: "Bai Jamjuree", sans-serif;
+  text-align: center;
+  margin: 3em auto;
+  width: 90%;
+}
+
+.access h1 {
+  font-weight: 600;
+  color: rgb(70, 68, 68);
+  font-size: 1.5em;
+}
+.access p {
+  font-weight: 300;
+  color: darkgrey;
+  padding: 1em 0em;
+  font-size: 0.9em;
+}
+
+.devices img {
+  width: 100%;
+  margin: 0em auto;
+}
+
+.super {
+  font-family: "Bai Jamjuree", sans-serif;
+  text-align: center;
+  margin: 3em auto;
+  width: 90%;
+}
+.super h1 {
+  font-weight: 600;
+  color: rgb(70, 68, 68);
+  font-size: 1.5em;
+  margin: 0.5em auto;
+}
+.super p {
+  font-weight: 300;
+  color: darkgrey;
+  font-size: 0.9em;
+}
+
+.tags,
+.clip {
+  font-family: "Bai Jamjuree", sans-serif;
+  text-align: center;
+  margin: 3em 1em;
+}
+.tags h1,
+.clip h1 {
+  font-weight: 600;
+  color: rgb(70, 68, 68);
+  font-size: 1.3em;
+  margin: 1em auto;
+}
+
+.tags p,
+.clip p {
+  font-weight: 300;
+  color: darkgrey;
+  font-size: 0.9em;
+}
+.tags img {
+  margin: 2em auto;
+}
+
+.image {
+  width: 80%;
+  margin: 2em auto;
+  text-align: center;
+}
+.image img {
+  margin: 2em 3em;
+  width: 35%;
+}
+
+.mac {
+  margin: 0em 0em 5em 0em;
+}
+
+.more {
+  background-color: rgb(238, 234, 234);
+  height: 80%;
+  padding: 1em 5.5em;
+}
+.more .icons img {
+  margin: 2em 2em;
+  justify-content: center;
+  width: 40%;
+}
+.more .accounts {
+  margin: 2em auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.A {
+  cursor: pointer;
+  padding: 1em 0em;
+  color: grey;
+  text-align: center;
+  font-family: "Bai Jamjuree", sans-serif;
+  font-size: 1.1em;
+  font-weight: 600;
+}
+
+.more a:visited {
+  color: rgb(68, 190, 154);
+}
+
+.more a:hover {
+  color: rgb(68, 190, 154);
+}
+.more a:active {
+  color: rgb(68, 190, 154);
+}
+.icons3 {
+  display: flex;
+  justify-content: space-between;
+}
+.desktopwrap {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .bg-mobile {
+    background-image: none;
+  }
+  .bg-mobile {
+    background-image: url(bg-header-desktop.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: block;
+    text-align: center;
+    padding: 5em;
+  }
+  .desktopwrap {
+    display: block;
+  }
+  .buttonswrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+    margin: 0em auto;
+    font-size: 0.7em;
+  }
+  .ios button,
+  .mac button {
+    padding: 0.5em 2.5em;
+  }
+  .device {
+    display: flex;
+    justify-content: space-between;
+    margin: 0em 3em 0em -3em;
+  }
+  .quick {
+    font-size: 0.7em;
+  }
+  .pointwrapper {
+    margin: 2em 0em;
+    text-align: left;
+  }
+  .lines {
+    width: 60%;
+    margin: 0em auto;
+  }
+  .kts,
+  .access {
+    font-size: 0.7em;
+    width: 60%;
+    margin: 2em auto;
+  }
+  .devices img {
+    width: 70%;
+    margin: 0em 6em;
+  }
+  .super {
+    font-size: 0.7em;
+  }
+  .tags {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.5em;
+    margin: 5em auto;
+    width: 80%;
+  }
+  .image {
+    width: 80%;
+  }
+  .image img {
+    width: 12%;
+    margin: 3em 1.4em;
+    justify-content: space-evenly;
+  }
+  .clip {
+    font-size: 1em;
+    width: 60%;
+    margin: 2em auto;
+  }
+  .more {
+    display: flex;
+    width: 100%;
+  }
+  .more .icons {
+    display: flex;
+  }
+  .more img {
+    width: 20%;
+  }
+  .more .icons A {
+    font-size: 0.8em;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 1em 1em;
+    width: 20%;
+  }
+  
+  .more .accounts img {
+    width: 60%;
+    margin: 0em 0em 0em 1em;
+    justify-content: right;
+  }
+}
