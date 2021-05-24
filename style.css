@@ -31,7 +31,7 @@ body {
 .lines p {
   font-weight: 300;
   color: darkgrey;
-  padding: 1em 1em;
+  margin: 1em auto;
   font-size: 0.9em;
 }
 .buttonswrapper {
@@ -105,8 +105,7 @@ body {
 .access {
   font-family: "Bai Jamjuree", sans-serif;
   text-align: center;
-  margin: 3em auto;
-  width: 90%;
+  padding: 5em 1em 2em 1em;
 }
 
 .access h1 {
@@ -117,7 +116,8 @@ body {
 .access p {
   font-weight: 300;
   color: darkgrey;
-  padding: 1em 0em;
+  margin: 1em auto;
+  width: 90%;
   font-size: 0.9em;
 }
 
@@ -154,7 +154,7 @@ body {
 .clip h1 {
   font-weight: 600;
   color: rgb(70, 68, 68);
-  font-size: 1.3em;
+  font-size: 1.5em;
   margin: 1em auto;
 }
 
@@ -187,16 +187,17 @@ body {
   height: 80%;
   padding: 1em 5.5em;
 }
-.more .icons img {
-  margin: 2em 2em;
-  justify-content: center;
+.more .logo1 {
+  text-align: center;
+  margin: 2em auto;
+}
+.more .logo img {
+  /* margin: 2em auto; */
   width: 40%;
 }
 .more .accounts {
-  margin: 2em auto;
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 
 .A {
@@ -209,19 +210,15 @@ body {
   font-weight: 600;
 }
 
-.more a:visited {
+.more .A:visited {
   color: rgb(68, 190, 154);
 }
 
-.more a:hover {
+.more .A:hover {
   color: rgb(68, 190, 154);
 }
-.more a:active {
+.more .A:active {
   color: rgb(68, 190, 154);
-}
-.icons3 {
-  display: flex;
-  justify-content: space-between;
 }
 .desktopwrap {
   display: none;
@@ -242,52 +239,73 @@ body {
   .desktopwrap {
     display: block;
   }
+
+  .lines {
+    width: 80%;
+    margin: 0em auto;
+    font-size: 1em;
+  }
+  .lines p {
+    width: 80%;
+  }
+
   .buttonswrapper {
     display: flex;
-    justify-content: space-between;
-    width: 40%;
+    justify-content: space-evenly;
+    width: 60%;
     margin: 0em auto;
-    font-size: 0.7em;
+    font-size: 0.8em;
   }
   .ios button,
   .mac button {
-    padding: 0.5em 2.5em;
+    padding: 1em 3em;
   }
+  .kts,
+  .access {
+    font-size: 1em;
+    width: 70%;
+    margin: 2em auto;
+    text-align: center;
+  }
+  .access {
+    margin: 5em auto;
+  }
+
   .device {
     display: flex;
     justify-content: space-between;
     margin: 0em 3em 0em -3em;
   }
+  .devices img {
+    width: 70%;
+    margin: 0em 6em;
+  }
   .quick {
-    font-size: 0.7em;
+    font-size: 0.8em;
   }
   .pointwrapper {
     margin: 2em 0em;
     text-align: left;
   }
-  .lines {
-    width: 60%;
-    margin: 0em auto;
-  }
-  .kts,
-  .access {
-    font-size: 0.7em;
-    width: 60%;
-    margin: 2em auto;
-  }
-  .devices img {
-    width: 70%;
-    margin: 0em 6em;
-  }
+
   .super {
-    font-size: 0.7em;
+    font-size: 1em;
+    width: 70%;
+    margin: 2em auto;
+    text-align: center;
   }
   .tags {
     display: flex;
     justify-content: space-between;
-    font-size: 0.5em;
+    font-size: 0.8em;
     margin: 5em auto;
     width: 80%;
+  }
+  .icon {
+    width: 31%;
+  }
+  .icon img {
+    height: 2.5em;
   }
   .image {
     width: 80%;
@@ -304,25 +322,32 @@ body {
   }
   .more {
     display: flex;
-    width: 100%;
+    justify-content: space-between;
   }
-  .more .icons {
+
+  .logo1 {
     display: flex;
+    align-items: center;
+    width: 70%;
   }
-  .more img {
-    width: 20%;
+  .accounts {
+    width: 15%;
+    align-items: center;
   }
-  .more .icons A {
-    font-size: 0.8em;
+  .logo {
+    width: 30%;
+  }
+
+  .icons {
     display: flex;
-    justify-content: space-evenly;
-    margin: 1em 1em;
-    width: 20%;
-  }
-  
-  .more .accounts img {
+    justify-content: space-between;
     width: 60%;
-    margin: 0em 0em 0em 1em;
-    justify-content: right;
+  }
+
+  .icons A {
+    font-size: 0.7em;
+    display: flex;
+    justify-content: left;
+    font-weight: 600;
   }
 }
